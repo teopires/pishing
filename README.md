@@ -1,74 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootcamp DIO - Cibersegurança Santander - Phishing para captura de senhas do Facebook</title>
-    <style>
-        h1, h2 {
-            transition: all 0.3s ease;
-        }
 
-        h1:hover, h2:hover {
-            color: #3498db;
-            text-shadow: 2px 2px 5px rgba(52, 152, 219, 0.6);
-            cursor: pointer;
-        }
+# Bootcamp DIO - Cibersegurança Santander - Phishing para Captura de Senhas do Facebook
 
-        /* Estilo de link para os links internos */
-        a {
-            text-decoration: none;
-            color: #2c3e50;
-            transition: color 0.3s;
-        }
+**Atenção:** Este projeto é para fins educacionais e de teste em ambientes controlados. O uso de phishing sem permissão é ilegal e antiético.
 
-        a:hover {
-            color: #e74c3c;
-        }
-    </style>
-</head>
-<body>
-    <h1>Phishing para Captura de Senhas do Facebook</h1>
+## Ferramentas Utilizadas
 
-    <h2>Ferramentas Utilizadas</h2>
-    <ul>
-        <li><b>Kali Linux</b>: Uma distribuição de segurança e testes de penetração.</li>
-        <li><b>SEToolkit</b>: Ferramenta de engenharia social que facilita a criação de ataques de phishing e outros ataques.</li>
-    </ul>
+- **Kali Linux**: Distribuição de segurança e testes de penetração.
+- **SEToolkit**: Ferramenta de engenharia social para criação de ataques de phishing e outros.
 
-    <h2>Configurando o Phishing no Kali Linux</h2>
+## Configurando o Phishing no Kali Linux
 
-    <h3>Passo 1: Acesso como root</h3>
-    <p>Primeiro, abra o terminal no Kali Linux e obtenha acesso root:</p>
-    <pre><code>sudo su</code></pre>
+### Passo 1: Acesso como root
+Primeiro, abra o terminal no Kali Linux e obtenha acesso root:
 
-    <h3>Passo 2: Iniciando o SEToolkit</h3>
-    <p>Em seguida, inicie o <b>SEToolkit</b> no Kali Linux:</p>
-    <pre><code>setoolkit</code></pre>
+```bash
+sudo su
+```
 
-    <h3>Passo 3: Escolhendo o Tipo de Ataque</h3>
-    <p>Dentro do SEToolkit, selecione as opções conforme descrito:</p>
-    <ul>
-        <li><b>Tipo de ataque</b>: Social-Engineering Attacks</li>
-        <li><b>Vetor de ataque</b>: Web Site Attack Vectors</li>
-        <li><b>Método de ataque</b>: Credential Harvester Attack Method</li>
-        <li><b>Método de ataque adicional</b>: Site Cloner</li>
-    </ul>
+### Passo 2: Iniciando o SEToolkit
+Inicie o **SEToolkit** no Kali Linux:
 
-    <h3>Passo 4: Obter o Endereço da Máquina</h3>
-    <p>Utilize o comando a seguir para descobrir o endereço IP da sua máquina:</p>
-    <pre><code>ifconfig</code></pre>
+```bash
+setoolkit
+```
 
-    <h3>Passo 5: URL para o Clone</h3>
-    <p>Agora, forneça a URL que você deseja clonar. Neste caso, vamos usar o <b>Facebook</b>:</p>
-    <p><a href="http://www.facebook.com" target="_blank">http://www.facebook.com</a></p>
+### Passo 3: Escolhendo o Tipo de Ataque
+Dentro do SEToolkit, selecione as opções abaixo:
 
-    <h3>Passo 6: Resultados</h3>
-    <p>Após seguir os passos acima, o SEToolkit irá clonar o site do Facebook e você poderá capturar credenciais (como nome de usuário e senha) inseridas pelos usuários no site clonado.</p>
+1. **Tipo de ataque**: Social-Engineering Attacks
+2. **Vetor de ataque**: Web Site Attack Vectors
+3. **Método de ataque**: Credential Harvester Attack Method
+4. **Método de ataque adicional**: Site Cloner
 
-    <hr>
-    <footer>
-        <p><strong>Disclaimer:</strong> Use esta ferramenta apenas em ambientes de teste e com permissão explícita. O phishing é ilegal sem o consentimento da vítima e é contra as regras de ética de segurança cibernética.</p>
-    </footer>
-</body>
-</html>
+### Passo 4: Obter o Endereço da Máquina
+Descubra o endereço IP da sua máquina com o comando:
+
+```bash
+ifconfig
+```
+
+### Passo 5: URL para o Clone
+Forneça a URL que você deseja clonar. Neste caso, usaremos o **Facebook**:
+
+```
+http://www.facebook.com
+```
+
+### Passo 6: Resultados
+O SEToolkit irá clonar o site do Facebook e você poderá capturar credenciais (como nome de usuário e senha) inseridas pelos usuários no site clonado.
+
+---
+
+**Disclaimer**: Use esta ferramenta apenas em ambientes de teste e com permissão explícita. O phishing é ilegal sem o consentimento da vítima e viola as normas de ética cibernética.
+
+## Licença
+
+Este repositório está licenciado sob a [Licença MIT](LICENSE).
