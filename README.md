@@ -46,8 +46,14 @@ Forneça a URL que você deseja clonar. Neste caso, usaremos o **Facebook**:
 http://www.facebook.com
 ```
 
+![image](https://github.com/user-attachments/assets/b97d39c7-64bc-4da4-a241-77e15035c5a6)
+
+
 ### Passo 6: Resultados
 O SEToolkit irá clonar o site do Facebook e você poderá capturar credenciais (como nome de usuário e senha) inseridas pelos usuários no site clonado.
+
+![image](https://github.com/user-attachments/assets/62f634c7-0bfa-465b-9f48-210a51e4eef4)
+
 
 ---
 
