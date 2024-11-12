@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp DIO - Cibersegurança Santander - Phishing para captura de senhas do Facebook</title>
     <style>
-        /* Estilo para os títulos */
         h1, h2 {
             transition: all 0.3s ease;
         }
 
-        /* Efeito de hover para os títulos */
         h1:hover, h2:hover {
             color: #3498db;
             text-shadow: 2px 2px 5px rgba(52, 152, 219, 0.6);
