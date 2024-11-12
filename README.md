@@ -54,6 +54,8 @@ O SEToolkit irá clonar o site do Facebook e você poderá capturar credenciais 
 
 ![image](https://github.com/user-attachments/assets/62f634c7-0bfa-465b-9f48-210a51e4eef4)
 
+![image](https://github.com/user-attachments/assets/50ccb71e-0a92-4d68-bea5-ad6cd4f7b752)
+
 
 ---
 
